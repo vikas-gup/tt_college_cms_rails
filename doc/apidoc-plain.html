@@ -1,0 +1,1196 @@
+  <h4><a href='#batches'>Batches</a></h4>
+  <ul>
+      <li><a href='#batches-index'>index</a></li>
+      <li><a href='#batches-show'>show</a></li>
+      <li><a href='#batches-create'>create</a></li>
+      <li><a href='#batches-update'>update</a></li>
+      <li><a href='#batches-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#courses'>Courses</a></h4>
+  <ul>
+      <li><a href='#courses-index'>index</a></li>
+      <li><a href='#courses-show'>show</a></li>
+      <li><a href='#courses-create'>create</a></li>
+      <li><a href='#courses-update'>update</a></li>
+      <li><a href='#courses-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#prof_course_mappings'>Prof course mappings</a></h4>
+  <ul>
+      <li><a href='#prof_course_mappings-index'>index</a></li>
+      <li><a href='#prof_course_mappings-show'>show</a></li>
+      <li><a href='#prof_course_mappings-create'>create</a></li>
+      <li><a href='#prof_course_mappings-update'>update</a></li>
+      <li><a href='#prof_course_mappings-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#professors'>Professors</a></h4>
+  <ul>
+      <li><a href='#professors-index'>index</a></li>
+      <li><a href='#professors-show'>show</a></li>
+      <li><a href='#professors-create'>create</a></li>
+      <li><a href='#professors-update'>update</a></li>
+      <li><a href='#professors-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#requirements'>Requirements</a></h4>
+  <ul>
+      <li><a href='#requirements-index'>index</a></li>
+      <li><a href='#requirements-show'>show</a></li>
+      <li><a href='#requirements-create'>create</a></li>
+      <li><a href='#requirements-update'>update</a></li>
+      <li><a href='#requirements-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#time_tables'>Time tables</a></h4>
+  <ul>
+      <li><a href='#time_tables-index'>index</a></li>
+  </ul>
+
+
+
+  <hr/>
+
+  <div>
+    <h2 id="batches">
+      <a href='#batches'>Batches</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="batches-index">
+      <a href='#batches'>Batches</a> / <a href='#batches-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /batches
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="batches-show">
+      <a href='#batches'>Batches</a> / <a href='#batches-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /batches/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="batches-create">
+      <a href='#batches'>Batches</a> / <a href='#batches-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /batches
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>code </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Code of batch</p>
+
+    </li>
+    
+    <li>
+      <strong>description </strong>:
+      <small>
+        optional
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Description for code of batch</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="batches-update">
+      <a href='#batches'>Batches</a> / <a href='#batches-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PUT /batches/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+    <li>
+      <strong>code </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Code of batch</p>
+
+    </li>
+    
+    <li>
+      <strong>description </strong>:
+      <small>
+        optional
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Description for code of batch</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="batches-destroy">
+      <a href='#batches'>Batches</a> / <a href='#batches-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /batches/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="courses">
+      <a href='#courses'>Courses</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="courses-index">
+      <a href='#courses'>Courses</a> / <a href='#courses-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /courses
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="courses-show">
+      <a href='#courses'>Courses</a> / <a href='#courses-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /courses/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="courses-create">
+      <a href='#courses'>Courses</a> / <a href='#courses-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /courses
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>code </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Code of course</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="courses-update">
+      <a href='#courses'>Courses</a> / <a href='#courses-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PUT /courses/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+    <li>
+      <strong>code </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Code of course</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="courses-destroy">
+      <a href='#courses'>Courses</a> / <a href='#courses-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /courses/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="prof_course_mappings">
+      <a href='#prof_course_mappings'>Prof course mappings</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="prof_course_mappings-index">
+      <a href='#prof_course_mappings'>Prof course mappings</a> / <a href='#prof_course_mappings-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /prof_course_mappings
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="prof_course_mappings-show">
+      <a href='#prof_course_mappings'>Prof course mappings</a> / <a href='#prof_course_mappings-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /prof_course_mappings/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="prof_course_mappings-create">
+      <a href='#prof_course_mappings'>Prof course mappings</a> / <a href='#prof_course_mappings-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /prof_course_mappings
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>professor_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of professor</p>
+
+    </li>
+    
+    <li>
+      <strong>course_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of course</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="prof_course_mappings-update">
+      <a href='#prof_course_mappings'>Prof course mappings</a> / <a href='#prof_course_mappings-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PUT /prof_course_mappings/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+    <li>
+      <strong>professor_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of professor</p>
+
+    </li>
+    
+    <li>
+      <strong>course_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of course</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="prof_course_mappings-destroy">
+      <a href='#prof_course_mappings'>Prof course mappings</a> / <a href='#prof_course_mappings-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /prof_course_mappings/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="professors">
+      <a href='#professors'>Professors</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="professors-index">
+      <a href='#professors'>Professors</a> / <a href='#professors-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /professors
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="professors-show">
+      <a href='#professors'>Professors</a> / <a href='#professors-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /professors/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="professors-create">
+      <a href='#professors'>Professors</a> / <a href='#professors-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /professors
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of professor</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="professors-update">
+      <a href='#professors'>Professors</a> / <a href='#professors-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PUT /professors/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of professor</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="professors-destroy">
+      <a href='#professors'>Professors</a> / <a href='#professors-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /professors/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="requirements">
+      <a href='#requirements'>Requirements</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="requirements-index">
+      <a href='#requirements'>Requirements</a> / <a href='#requirements-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /requirements
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="requirements-show">
+      <a href='#requirements'>Requirements</a> / <a href='#requirements-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /requirements/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="requirements-create">
+      <a href='#requirements'>Requirements</a> / <a href='#requirements-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /requirements
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>batch_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>ID of batch</p>
+
+    </li>
+    
+    <li>
+      <strong>course_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>ID of batch</p>
+
+    </li>
+    
+    <li>
+      <strong>no_of_class </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>No. of classes required</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="requirements-update">
+      <a href='#requirements'>Requirements</a> / <a href='#requirements-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PUT /requirements/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+    <li>
+      <strong>batch_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>ID of batch</p>
+
+    </li>
+    
+    <li>
+      <strong>course_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>ID of batch</p>
+
+    </li>
+    
+    <li>
+      <strong>no_of_class </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>No. of classes required</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="requirements-destroy">
+      <a href='#requirements'>Requirements</a> / <a href='#requirements-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /requirements/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="time_tables">
+      <a href='#time_tables'>Time tables</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="time_tables-index">
+      <a href='#time_tables'>Time tables</a> / <a href='#time_tables-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /time_rables
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>batch_id </strong>:
+      <small>
+        optional
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>ID of batch</p>
+
+    </li>
+    
+    <li>
+      <strong>course_id </strong>:
+      <small>
+        optional
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>ID of course</p>
+
+    </li>
+    
+    <li>
+      <strong>professor_id </strong>:
+      <small>
+        optional
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>ID of professor</p>
+
+    </li>
+    
+    <li>
+      <strong>day_of_week </strong>:
+      <small>
+        optional
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Day of week</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
