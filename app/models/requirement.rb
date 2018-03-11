@@ -34,6 +34,7 @@ class Requirement < ApplicationRecord
       time_table.inject(0) {|total_hours, rec| total_hours+=rec.end_hour - rec.start_hour}
       rem_hours_day_for_alloc =  batch_max_hours - total_hours
       rem_hours_day_for_alloc = [rem_hours_day_for_alloc, hours_req].min
+      # Calculated the hours that can be allocated to the batch for that particular day
       hours_rem_for_day = rem_hours_day_for_alloc
 
       if rem_hours_day_for_alloc > 0
@@ -45,12 +46,14 @@ class Requirement < ApplicationRecord
           prof_hours = prof_max_hours - prof_working_hours
           if prof_hours > 0
             hours_for_prof_used = [rem_hours_day_for_alloc, prof_hours].min
+            # Calculated the hours that can be allocated to the professor for the for that particular day
             rem_hours_day_for_alloc = rem_hours_day_for_alloc - hours_for_prof_used
             (college_start_hour..college_end_hour).each do |st_hr|
               end_hr = st_hr + 1
               prof_for_hr = prof_time_table.where(start_hour: st_hr, end_hour: end_hr).last
               if prof_for_hr.nil?
                 prof_hsh = {batch_id: batch.id, professor_id: prof.id, course_id: course.id, day_of_week: day, start_hour: st_hr, end_hour: end_hr}
+                # Calculated the start hours and end hours for the batch of the course on a particular day
                 prof_day_alloted_time_arr.push(prof_hsh)
                 prof_hours = prof_hours - 1
               end

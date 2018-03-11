@@ -1,4 +1,14 @@
-Curl Request    ------->
+---------------Documentation-----------
+
+http://localhost:3000/apipie
+
+----------Setup------------
+rake db:create
+rake db:migrate
+rake db:seed
+
+
+--------------Curl Request    -------
 
 -------Batches--------------
 

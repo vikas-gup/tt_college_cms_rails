@@ -39,6 +39,19 @@ class CoursesController < ApplicationController
 		end
 	end
 
+
+  api :DELETE, '/courses/:id'
+  param :id, :number, :required => true
+  def destroy
+    begin
+      course = Course.find(params[:id])
+      course.destroy
+      render :json => {}, :status => :ok
+    rescue ActiveRecord::RecordNotFound => e
+      render json: { error: e.to_s }, status: :not_found
+    end
+  end
+
 	private
 	def course_params
 		params.permit(:code)
